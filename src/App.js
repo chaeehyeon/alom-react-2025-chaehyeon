@@ -21,7 +21,6 @@ function App() {
           path="/"
           element={<div>App.js와 example.js를 확인해주세요.</div>}
         />
-        /* <Route path="/example" element={<Example />} /> */
       </Routes>
     </Router>
   );
