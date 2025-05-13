@@ -9,10 +9,10 @@ function App() {
 
   const onSubmit = (event) => {
     event.preventDefault();
-    if (toDo === "") {
+    if (toDo.trim() === "") {
       return;
     }
-    const newToDos = [toDo, ...toDos];
+    const newToDos = [toDo.trim(), ...toDos];
     setToDos(newToDos);
     localStorage.setItem("savedToDos", JSON.stringify(newToDos));
     setToDo("");
